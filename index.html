@@ -1,0 +1,1035 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>
+    Suthu Holidays:Over a Billion Review's & Contribution for Hotels,Attractions
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="tripadvisor.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="siteHeader">
+    <div class="topbar">
+      <div class="logo"><img src="wordmark.svg" /></div>
+      <div class="scrollup-search">
+        <i class="fa-solid fa-magnifying-glass" style="color: rgb(1, 8, 22)"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="nav-links">
+        <button class="AI-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+            <path d="M20 3v4" />
+            <path d="M22 5h-4" />
+            <path d="M4 17v2" />
+            <path d="M5 18H3" />
+          </svg>
+          <a href="https://chatgpt.com/use-cases/travel-and-exploration/" target="_blank">Plan with AI</a>
+        </button>
+
+        <p class="but">Discover</p>
+        <p class="but">Review</p>
+        <p class="but">More</p>
+        <div class="menubar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="inr"><i class="fa-solid fa-globe"></i>|INR</div>
+
+        <button class="sign-in" id="signInBtn">Sign in</button>
+
+        <div class="modal-overlay" id="signInModal">
+          <div class="modal-card">
+            <button class="modal-close" id="closeModal">✕</button>
+
+            <h2 class="modal-title">
+              Sign in to unlock the<br />best of Wanderlist.
+            </h2>
+
+            <button class="oauth-btn">
+              <svg width="18" height="18" viewBox="0 0 48 48">
+                <path fill="#FFC107"
+                  d="M43.6 20.5H42V20H24v8h11.3C33.7 32.4 29.3 35 24 35c-6.1 0-11-4.9-11-11s4.9-11 11-11c2.8 0 5.3 1 7.3 2.7l5.7-5.7C33.6 6.5 29 4.5 24 4.5 12.7 4.5 3.5 13.7 3.5 25S12.7 45.5 24 45.5 44.5 36.3 44.5 25c0-1.6-.2-3.1-.9-4.5z" />
+                <path fill="#FF3D00"
+                  d="M6.3 14.7l6.6 4.8C14.6 16 19 13 24 13c2.8 0 5.3 1 7.3 2.7l5.7-5.7C33.6 6.5 29 4.5 24 4.5c-7.7 0-14.3 4.4-17.7 10.2z" />
+                <path fill="#4CAF50"
+                  d="M24 45.5c5 0 9.5-1.9 12.9-5l-6-5c-2 1.4-4.5 2.2-6.9 2.2-5.3 0-9.7-3.6-11.3-8.5l-6.5 5C9.6 40.9 16.3 45.5 24 45.5z" />
+                <path fill="#1976D2"
+                  d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.3 5.5l6 5C40.5 35.9 44.5 31 44.5 25c0-1.6-.2-3.1-.9-4.5z" />
+              </svg>
+              Continue with Google
+            </button>
+            <button class="oauth-btn">✉️ Continue with email</button>
+
+            <p class="modal-footer">
+              By proceeding, you agree to our Terms of Use
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="compact-tabs">
+      <span>Things to Do</span>
+      <span>Hotels</span>
+      <span>Restaurants</span>
+      <span>Forums</span>
+    </div>
+  </header>
+
+  <div class="search-block">
+    <div class="what">
+      <h1>Where to?</h1>
+    </div>
+
+    <div class="tabs">
+      <span class="active">
+        <div class="ticon"><i class="fa-solid fa-house"></i></div> Search All
+      </span>
+      <span>
+        <div class="ticon"><i class="fa-solid fa-camera"></i> </div> Things to Do
+      </span>
+      <span>
+        <div class="ticon"><i class="fa-solid fa-bed"></i> </div> Hotels
+      </span>
+      <span>
+        <div class="ticon"><i class="fa-solid fa-utensils"></i> </div> Restaurants
+      </span>
+    </div>
+    <div class="big-search">
+      <i class="fa-solid fa-magnifying-glass" style="color: rgb(1, 8, 22)"></i>
+      <input type="text" placeholder="Places to go, things to do, hotels..." />
+      <button class="ask-ai-btn">
+        <a href="https://chatgpt.com/use-cases/travel-and-exploration/">Ask AI</a>
+      </button>
+      <button class="search-btn">Search</button>
+    </div>
+  </div>
+
+  <p class="jhon">Jhon C</p>
+
+  <div class="hero fade-up">
+    <img src="caption(1).jpg">
+
+    <div class="hero-text">
+      <h1>Find things to do<br>for everything<br>you're into</h1>
+      <p>Browse 400,000+ experiences and book with us.</p>
+      <button class="book-btn">Book now</button>
+    </div>
+  </div>
+
+  <div class="things-to-do fade-up">
+    <h3>Find things to do by interest</h3>
+    <p>Whatever you're into, we've got it</p>
+  </div>
+
+  <div class="things-to-do__image">
+    <div class="interest-card">
+      <img src="caption11(2).jpg" alt="Outdoors">
+      <p class="interest-label">Outdoors</p>
+    </div>
+    <div class="interest-card">
+      <img src="caption1 (2).jpg" alt="Food">
+      <p class="interest-label">Food</p>
+    </div>
+    <div class="interest-card">
+      <img src="caption1 (3).jpg" alt="Culture">
+      <p class="interest-label">Culture</p>
+    </div>
+    <div class="interest-card">
+      <img src="caption1 (4).jpg" alt="Water">
+      <p class="interest-label">Water</p>
+    </div>
+  </div>
+
+  <!-- ===== Ways to tour carousel ===== -->
+  <section class="tour-section fade-up">
+    <h3>Ways to tour France</h3>
+    <p>Book these experiences for a close-up look at France.</p>
+
+    <div class="carousel-wrap">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="france1(1).jpg" alt="Full-Day Experiential Hyderabad Tour">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Eiffel Tower, Paris: Iconic iron tower rising dramatically against a clear blue sky.</h4>
+          <div class="tour-card__rating">
+            <span>4.9</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(179)</span>
+          </div>
+          <p class="tour-card__price">from ₹12,772 per group</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="france1.jpg" alt="Private Sunrise Taj Mahal Tour from Delhi By Car -All inclusive">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Riverside Village, Dordogne: Charming stone village nestled beneath cliffs beside a calm river.</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(382)</span>
+          </div>
+          <p class="tour-card__price">from ₹3,832 per adult</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="france1(2).jpg" alt="Full day guided tour of Hyderabad">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Étretat Cliffs, Normandy: Dramatic white chalk cliffs form a natural arch over turquoise waters.</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(16)</span>
+          </div>
+          <p class="tour-card__price">from ₹9,197 per group</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="france1(7).jpg" alt="Mesmerising Hyderabad Heritage Cultural Tour with Ethnic lunch">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Fourvière Basilica, Lyon: Majestic hilltop basilica overlooks the historic city and rolling hills.</h4>
+          <div class="tour-card__rating">
+            <span>4.9</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(93)</span>
+          </div>
+          <p class="tour-card__price">from ₹13,263 per group</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="france1(3).jpg" alt="The White Mughal tour in Hyderabad about Romance & Betrayal">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>The Louvre, Paris: Glass pyramid glows at sunset beside the grand historic palace.</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(13)</span>
+          </div>
+          <p class="tour-card__price">from ₹12,281 per adult</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="france1(4).jpg" alt="Golconda Fort & Hyderabad City Tour">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Arc de Triomphe, Paris: Grand triumphal arch stands proudly amid busy Parisian boulevard traffic.</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(1)</span>
+          </div>
+          <p class="tour-card__price">from ₹5,698 per adult</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="france1(5).jpg" alt="Golconda Heritage Half Day Guided Private Tour">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Sacré-Cœur, Montmartre: White-domed basilica crowns a hill where visitors relax on grassy steps.</h4>
+          <div class="tour-card__rating">
+            <span>4.9</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(30)</span>
+          </div>
+          <p class="tour-card__price">from ₹11,789 per group</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="france1(6).jpg" alt="4Hr Experiential Tour of Hyderabad's Historic & Cultural Old City">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>French Breakfast Spread: Fresh croissants, coffee, blueberries and jam make a delightful morning spread.</h4>
+          <div class="tour-card__rating">
+            <span>4.8</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(48)</span>
+          </div>
+          <p class="tour-card__price">from ₹8,449 per adult</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="france1(8).jpg" alt="Private Guided Tour at the Three Temples of Hyderabad">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Prosciutto Bruschetta: Savory prosciutto, cheese, basil and cherry tomato top crusty toasted bread.</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(6)</span>
+          </div>
+          <p class="tour-card__price">from ₹12,772 per adult</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="inspiration-section fade-up">
+    <h3>Inspiration to get you going</h3>
+
+    <div class="inspiration-track" id="inspirationTrack">
+      <div class="inspiration-card">
+        <div class="inspiration-card__image">
+          <img src="card2(3).jpg" alt="6 beaches that keep summer going into fall">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="inspiration-card__title">6 beaches that keep summer going into fall</p>
+      </div>
+
+      <div class="inspiration-card">
+        <div class="inspiration-card__image">
+          <img src="card2(4).jpg" alt="A low-spend guide to the world's most expensive cities">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="inspiration-card__title">A low-spend guide to the world's most expensive cities</p>
+      </div>
+
+      <div class="inspiration-card">
+        <div class="inspiration-card__image">
+          <img src="card2(5).jpg" alt="8 top-tier street food cities around the world">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="inspiration-card__title">8 top-tier street food cities around the world</p>
+      </div>
+
+      <div class="inspiration-card">
+        <div class="inspiration-card__image">
+          <img src="card2(6).jpg" alt="Weekend trips you can book on a whim">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="inspiration-card__title">Weekend trips you can book on a whim</p>
+      </div>
+
+      <div class="inspiration-card">
+        <div class="inspiration-card__image">
+          <img src="card2(2).jpg" alt="Hidden gems locals don't tell tourists about">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="inspiration-card__title">Hidden gems locals don't tell tourists about</p>
+      </div>
+
+      <div class="inspiration-card">
+        <div class="inspiration-card__image">
+          <img src="card2(7).jpg" alt="8 top-tier street food cities around the world">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="inspiration-card__title">Fentastic sky festival and making memorable moments</p>
+      </div>
+
+      <div class="inspiration-card">
+        <div class="inspiration-card__image">
+          <img src="card2(8).jpg" alt="Weekend trips you can book on a whim">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="inspiration-card__title">To Get an Adventure,s must visit Himalayas </p>
+      </div>
+
+      <div class="inspiration-card">
+        <div class="inspiration-card__image">
+          <img src="card2(9).jpg" alt="Hidden gems locals don't tell tourists about">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="inspiration-card__title">Springs in america makes an better feeling of life</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="destinations-section fade-up">
+    <h3>Popular destinations in India</h3>
+    <p>Explore the places every traveler adds to their India bucket list.</p>
+
+    <div class="destinations-track" id="destinationsTrack">
+      <div class="destination-card">
+        <div class="destination-card__image">
+          <img src="taj mahal.jpg" alt="Taj Mahal, Agra">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="destination-card__title">Taj Mahal, Agra</p>
+      </div>
+
+      <div class="destination-card">
+        <div class="destination-card__image">
+          <img src="goa.jpg" alt="Goa Beaches">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="destination-card__title">Goa Beaches</p>
+      </div>
+
+      <div class="destination-card">
+        <div class="destination-card__image">
+          <img src="kerala.jpg" alt="Kerala Backwaters">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="destination-card__title">Kerala Backwaters</p>
+      </div>
+
+      <div class="destination-card">
+        <div class="destination-card__image">
+          <img src="jaipure.jpg" alt="Jaipur, Rajasthan">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="destination-card__title">Jaipur, Rajasthan</p>
+      </div>
+
+      <div class="destination-card">
+        <div class="destination-card__image">
+          <img src="ghats.jpg" alt="Varanasi Ghats">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="destination-card__title">Varanasi Ghats</p>
+      </div>
+
+      <div class="destination-card">
+        <div class="destination-card__image">
+          <img src="ladhak.jpg" alt="Ladakh">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <p class="destination-card__title">Ladakh</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="hero fade-up">
+    <img src="madurai-meenakshi.webp">
+
+    <div class="hero-text">
+      <h1>Tamilnadu tourism<br>State with Most beautiful in India</h1>
+      <p>Browse 20000 + experiences and book with us.</p>
+      <button class="book-btn">Book now</button>
+    </div>
+  </div>
+
+  <section class="heritage-section fade-up">
+    <div class="heritage-content">
+      <h1>Tamilnadu tourist guide</h1>
+      <h2>Iconic Historical Temples and Heritage Sites</h2>
+      <p>
+        Tamil Nadu's temple trail winds through some of India's most extraordinary heritage sites —
+        from Madurai's massive, brilliantly sculpted Meenakshi Amman Temple, to Thanjavur's magnificent
+        Brihadeeswara Temple, a true masterpiece of Chola architecture, along the coast to Mahabalipuram's
+        UNESCO-listed Shore Temple and its ancient stone monolith carvings, and finally to the sacred
+        island town of Rameswaram, linked by the iconic Pamban Bridge and home to the revered
+        Ramanathaswamy Temple.
+      </p>
+    </div>
+  </section>
+
+  <section class="tour-section fade-up">
+    <h3>Must visit place's</h3>
+    <p>Book these experiences for a close-up look at Tamilnadu District.</p>
+
+    <div class="carousel-wrap">
+      <div class="carousel-track" id="carouselTrack2">
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (1).jpg" alt="Bangalore Palace">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Bangalore Palace – Majestic Tudor-style palace surrounded by lush manicured gardens</h4>
+          <div class="tour-card__rating">
+            <span>4.9</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(179)</span>
+          </div>
+          <p class="tour-card__price">from ₹12,772 per group</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (2).jpg" alt="Adiyogi Shiva Statue, Coimbatore">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Adiyogi Shiva Statue, Coimbatore – World's largest bust sculpture depicting Lord Shiva's</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(382)</span>
+          </div>
+          <p class="tour-card__price">from ₹3,832 per adult</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (3).jpg" alt="Shore Temple, Mahabalipuram">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Shore Temple, Mahabalipuram – Ancient UNESCO-listed granite temple standing majestically against the Bay of Bengal.</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(16)</span>
+          </div>
+          <p class="tour-card__price">from ₹9,197 per group</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (4).jpg" alt="Thirumalai Nayakkar Mahal, Madurai">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Thirumalai Nayakkar Mahal, Madurai – Grand 17th-century Indo-Saracenic palace showcasing stunning pillared</h4>
+          <div class="tour-card__rating">
+            <span>4.9</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(93)</span>
+          </div>
+          <p class="tour-card__price">from ₹13,263 per group</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (5).jpg" alt="Western Ghats Viewpoint">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Western Ghats Viewpoint – Breathtaking misty mountain ranges offering panoramic views of endless emerald.</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(13)</span>
+          </div>
+          <p class="tour-card__price">from ₹12,281 per adult</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (6).jpg" alt="Marina Beach, Chennai">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Marina Beach, Chennai – World's second-longest urban beach featuring golden sands and vibrant coastal promenade.</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(1)</span>
+          </div>
+          <p class="tour-card__price">from ₹5,698 per adult</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (7).jpg" alt="Temple Wall Carvings">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Temple Wall Carvings – Intricately sculpted stone deities showcasing masterful Dravidian temple architecture</h4>
+          <div class="tour-card__rating">
+            <span>4.9</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(30)</span>
+          </div>
+          <p class="tour-card__price">from ₹11,789 per group</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (8).jpg" alt="Tea Plantations, Munnar">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Tea Plantations, Munnar – Rolling emerald tea gardens surrounding tranquil lakes amid stunning misty mountain.</h4>
+          <div class="tour-card__rating">
+            <span>4.8</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(48)</span>
+          </div>
+          <p class="tour-card__price">from ₹8,449 per adult</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (9).jpg" alt="Twin Peaks Valley View">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Twin Peaks Valley View – Dramatic forested mountain gap revealing sprawling town nestled peacefully.</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(6)</span>
+          </div>
+          <p class="tour-card__price">from ₹12,772 per adult</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-wrap">
+      <div class="carousel-track" id="carouselTrack3">
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (10).jpg" alt="Cascading Waterfall">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Cascading Waterfall – Powerful pristine waterfall plunging dramatically over rugged rocks amid lush green forest.</h4>
+          <div class="tour-card__rating">
+            <span>4.9</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(179)</span>
+          </div>
+          <p class="tour-card__price">from ₹12,772 per group</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (11).jpg" alt="Brihadeeswarar Temple, Thanjavur">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Brihadeeswarar Temple, Thanjavur – Magnificent UNESCO Chola-era temple featuring towering vimana</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(382)</span>
+          </div>
+          <p class="tour-card__price">from ₹3,832 per adult</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (12).jpg" alt="Temple Tank Reflection">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Temple Tank Reflection – Sacred colorful gopuram reflecting beautifully in tranquil temple tank surrounded by trees.</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(16)</span>
+          </div>
+          <p class="tour-card__price">from ₹9,197 per group</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (13).jpg" alt="Serene Blue Reservoir">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Serene Blue Reservoir – Stunning turquoise lake nestled between rolling hills, perfect for peaceful photography.</h4>
+          <div class="tour-card__rating">
+            <span>4.9</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(93)</span>
+          </div>
+          <p class="tour-card__price">from ₹13,263 per group</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (14).jpg" alt="Misty Hill Town">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Misty Hill Town – Charming terraced hillside village enveloped in dreamy clouds and lush greenery.</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(13)</span>
+          </div>
+          <p class="tour-card__price">from ₹12,281 per adult</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (15).jpg" alt="Pamban Bridge, Rameswaram">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Pamban Bridge, Rameswaram – Iconic sea bridge stretching across turquoise waters connecting mainland to island.</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(1)</span>
+          </div>
+          <p class="tour-card__price">from ₹5,698 per adult</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (16).jpg" alt="Vibrant Local Street Market">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Vibrant Local Street Market – Bustling colorful bazaar street featuring rickshaws, shops, and golden sunset</h4>
+          <div class="tour-card__rating">
+            <span>4.9</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(30)</span>
+          </div>
+          <p class="tour-card__price">from ₹11,789 per group</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (17).jpg" alt="Thiruvalluvar Statue, Kanyakumari">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Thiruvalluvar Statue, Kanyakumari – Towering iconic statue majestically overlooking meeting point of three seas.</h4>
+          <div class="tour-card__rating">
+            <span>4.8</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(48)</span>
+          </div>
+          <p class="tour-card__price">from ₹8,449 per adult</p>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-card__image">
+            <img src="tn (18).jpg" alt="Nilgiri Tea Gardens">
+            <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h4>Nilgiri Tea Gardens – Serene tea estate offering misty valley views amid tall scattered trees.</h4>
+          <div class="tour-card__rating">
+            <span>5.0</span>
+            <span class="dots">●●●●●</span>
+            <span class="count">(6)</span>
+          </div>
+          <p class="tour-card__price">from ₹12,772 per adult</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section class="stay-section fade-up">
+  <h3>Stay somewhere amazing</h3>
+  <p>Hotels and resorts for your next adventure.</p>
+
+  <div class="carousel-wrap">
+    <div class="stay-track" id="stayTrack">
+      <div class="stay-card">
+        <div class="stay-card__image">
+          <img src="hotel1.jpg" alt="Luxury Beach Resort, Goa">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="stay-card__body">
+          <p class="stay-card__location">Goa, India</p>
+          <h4 class="stay-card__name">Luxury Beach Resort</h4>
+          <div class="stay-card__rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-text">4.7 · 1,245 reviews</span>
+          </div>
+          <p class="stay-card__price">₹6,500 <span>night</span></p>
+        </div>
+      </div>
+
+      <div class="stay-card">
+        <div class="stay-card__image">
+          <img src="hotel.jpg" alt="Luxury City Hotel, Dubai">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="stay-card__body">
+          <p class="stay-card__location">Dubai, UAE</p>
+          <h4 class="stay-card__name">Luxury City Hotel</h4>
+          <div class="stay-card__rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-text">4.8 · 2,890 reviews</span>
+          </div>
+          <p class="stay-card__price">₹11,500 <span>night</span></p>
+        </div>
+      </div>
+
+      <div class="stay-card">
+        <div class="stay-card__image">
+          <img src="hotel3.jpg" alt="Tropical Island Resort, Bali">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="stay-card__body">
+          <p class="stay-card__location">Bali, Indonesia</p>
+          <h4 class="stay-card__name">Tropical Island Resort</h4>
+          <div class="stay-card__rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-text">4.9 · 3,421 reviews</span>
+          </div>
+          <p class="stay-card__price">₹7,800 <span>night</span></p>
+        </div>
+      </div>
+
+      <div class="stay-card">
+        <div class="stay-card__image">
+          <img src="hotel4.jpg" alt="Elegant Paris Hotel">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="stay-card__body">
+          <p class="stay-card__location">Paris, France</p>
+          <h4 class="stay-card__name">Elegant Paris Hotel</h4>
+          <div class="stay-card__rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-text">4.8 · 2,120 reviews</span>
+          </div>
+          <p class="stay-card__price">₹13,200 <span>night</span></p>
+        </div>
+      </div>
+
+      <div class="stay-card">
+        <div class="stay-card__image">
+          <img src="hotel5.jpg" alt="Mountain Retreat, Munnar">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="stay-card__body">
+          <p class="stay-card__location">Munnar, India</p>
+          <h4 class="stay-card__name">Mountain Tea Retreat</h4>
+          <div class="stay-card__rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-text">4.6 · 980 reviews</span>
+          </div>
+          <p class="stay-card__price">₹5,200 <span>night</span></p>
+        </div>
+      </div>
+
+      <div class="stay-card">
+        <div class="stay-card__image">
+          <img src="hotel6.jpg" alt="Desert Camp, Rajasthan">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="stay-card__body">
+          <p class="stay-card__location">Jaisalmer, India</p>
+          <h4 class="stay-card__name">Royal Desert Camp</h4>
+          <div class="stay-card__rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-text">4.7 · 1,560 reviews</span>
+          </div>
+          <p class="stay-card__price">₹8,900 <span>night</span></p>
+        </div>
+      </div>
+
+      <div class="stay-card">
+        <div class="stay-card__image">
+          <img src="hotel7.jpg" alt="Lakeview Villa, Udaipur">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="stay-card__body">
+          <p class="stay-card__location">Udaipur, India</p>
+          <h4 class="stay-card__name">Lakeview Palace Villa</h4>
+          <div class="stay-card__rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-text">4.9 · 2,340 reviews</span>
+          </div>
+          <p class="stay-card__price">₹15,600 <span>night</span></p>
+        </div>
+      </div>
+
+      <div class="stay-card">
+        <div class="stay-card__image">
+          <img src="hotel8.jpg" alt="Boutique Hotel, Kyoto">
+          <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="stay-card__body">
+          <p class="stay-card__location">Kyoto, Japan</p>
+          <h4 class="stay-card__name">Traditional Ryokan Stay</h4>
+          <div class="stay-card__rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-text">4.8 · 1,780 reviews</span>
+          </div>
+          <p class="stay-card__price">₹9,400 <span>night</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+<section class="awards-section fade-up">
+  <div class="awards-content">
+    <div class="awards-badge"><i class="fa-solid fa-award"></i></div>
+    <h2 class="awards-title">Travellers' Choice Awards Best of the Best</h2>
+    <p class="awards-text">Among our top 1% of places, stays, eats, and experiences—decided by you.</p>
+    <div class="awards-footer">
+      <button class="awards-btn">See the winners</button>
+    </div>
+  </div>
+  <div class="awards-image">
+    <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1200&auto=format&fit=crop" alt="Colosseum in Rome">
+    
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-col">
+      <h4>About Suthu Holidays</h4>
+      <a href="#">About Us</a>
+      <a href="#">Press</a>
+      <a href="#">Resources and Policies</a>
+      <a href="#">Careers</a>
+      <a href="#">Trust &amp; Safety</a>
+      <a href="#">Contact us</a>
+      <a href="#">Suthu Holidays Technology Blog</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#">Write a review</a>
+      <a href="#">Add a Place</a>
+      <a href="#">Join</a>
+      <a href="#">Travellers' Choice</a>
+      <a href="#">Help Centre</a>
+      <a href="#">Travel Stories</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Do Business With Us</h4>
+      <a href="#">Owners &amp; DMO/CVB</a>
+      <a href="#">Business Advantage</a>
+      <a href="#">Sponsored Placements</a>
+      <a href="#">Advertise with Us</a>
+      <a href="#">Access our Content API</a>
+
+      <h4 class="sub-heading">Get The App</h4>
+      <a href="#">iPhone App</a>
+      <a href="#">Android App</a>
+    </div>
+
+    <div class="footer-col sites-col">
+      <h4>Suthu Holidays Sites</h4>
+      <p>Book tours and attraction tickets on <a href="#">Viator</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      <div class="footer-brand">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="17" cy="17" r="17" fill="#34495e"/>
+          <circle cx="10.5" cy="17" r="6" fill="#fff"/>
+          <circle cx="23.5" cy="17" r="6" fill="#fff"/>
+          <circle cx="10.5" cy="17" r="2.4" fill="#34495e"/>
+          <circle cx="23.5" cy="17" r="2.4" fill="#34495e"/>
+        </svg>
+        <div>
+          <p class="copyright">&copy; 2026 Suthu Holidays LLC All rights reserved.</p>
+          <p class="legal-links">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy and Cookies Statement</a>
+            <a href="#">Cookie consent</a>
+            <a href="#">How the site works</a>
+            <a href="#">Contact us</a>
+            <a href="#">Accessibility Statement</a>
+          </p>
+          <p class="region-text">
+            This is the version of our website addressed to speakers of English in India. If you are a resident of another country or region, please select the appropriate version of Suthu Holidays for your country or region in the drop-down menu....
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-controls">
+      <div class="selector-row">
+        <div class="selector">₹ INR
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="#34495e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="selector">India
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="#34495e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+
+      <div class="social-row">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.6L4.7 22H1.6l8.1-9.3L1 2h7l4.9 6.1L18.9 2z"/></svg></a>
+        <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.6 19.3c0-.8 0-1.8.3-2.6l1.5-6.3s-.4-.8-.4-1.9c0-1.8 1-3.1 2.3-3.1 1.1 0 1.6.8 1.6 1.8 0 1.1-.7 2.7-1 4.2-.3 1.2.6 2.2 1.8 2.2 2.1 0 3.7-2.3 3.7-5.5 0-2.9-2-4.9-5-4.9-3.4 0-5.4 2.5-5.4 5.2 0 1 .4 2.1.9 2.7.1.1.1.2.1.3l-.3 1.4c0 .2-.2.3-.4.2-1.4-.6-2.3-2.6-2.3-4.2 0-3.4 2.5-6.6 7.1-6.6 3.7 0 6.6 2.7 6.6 6.2 0 3.7-2.3 6.7-5.6 6.7-1.1 0-2.1-.6-2.5-1.2l-.7 2.6c-.2 1-.9 2.2-1.4 2.9A10 10 0 1 0 12 2z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 2 .2 2.7.5.7.3 1.3.6 1.9 1.2.6.6.9 1.2 1.2 1.9.3.7.4 1.5.5 2.7.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 2-.5 2.7-.3.7-.6 1.3-1.2 1.9-.6.6-1.2.9-1.9 1.2-.7.3-1.5.4-2.7.5-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-2-.2-2.7-.5-.7-.3-1.3-.6-1.9-1.2-.6-.6-.9-1.2-1.2-1.9-.3-.7-.4-1.5-.5-2.7C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-2 .5-2.7.3-.7.6-1.3 1.2-1.9.6-.6 1.2-.9 1.9-1.2.7-.3 1.5-.4 2.7-.5C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1 .1-1.6.2-1.9.4-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.2.3-.3.9-.4 1.9-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1 .2 1.6.4 1.9.2.5.4.8.8 1.2.4.4.7.6 1.2.8.3.2.9.3 1.9.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1-.1 1.6-.2 1.9-.4.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.3.3-.9.4-1.9.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1-.2-1.6-.4-1.9-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.3-.2-.9-.3-1.9-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.7a5.3 5.3 0 1 1 0 10.6 5.3 5.3 0 0 1 0-10.6zm0 1.8a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.5-2a1.2 1.2 0 1 1 0 2.5 1.2 1.2 0 0 1 0-2.5z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.5 6.2s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.4 2.6 12 2.6 12 2.6h0s-4.4 0-7.3.3c-.4 0-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S1.2 8 1.2 9.9v1.9c0 1.9.3 3.7.3 3.7s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.6.3 7.6.3s4.4 0 7.3-.3c.4 0 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.3-1.9.3-3.7V9.9c0-1.9-.3-3.7-.3-3.7zM9.7 14.1V7.9l5.9 3.1-5.9 3.1z"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 2h-3.2v13.8c0 1.6-1.3 2.9-2.9 2.9s-2.9-1.3-2.9-2.9 1.3-2.9 2.9-2.9c.3 0 .6 0 .9.1V9.7c-.3 0-.6-.1-.9-.1-3.4 0-6.1 2.7-6.1 6.1s2.7 6.1 6.1 6.1 6.1-2.7 6.1-6.1V8.4c1.2.9 2.7 1.4 4.3 1.4V6.6c-2.4 0-4.3-1.9-4.3-4.3V2z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    const header = document.getElementById("siteHeader");
+    let lastState = false;
+    window.addEventListener("scroll", () => {
+      const shouldCollapse = window.scrollY > 80;
+      if (shouldCollapse !== lastState) {
+        header.classList.toggle("scrolled", shouldCollapse);
+        lastState = shouldCollapse;
+      }
+    });
+
+    const signInBtn = document.getElementById("signInBtn");
+    const modal = document.getElementById("signInModal");
+    const closeModal = document.getElementById("closeModal");
+
+    signInBtn.addEventListener("click", () => modal.classList.add("active"));
+    closeModal.addEventListener("click", () => modal.classList.remove("active"));
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) modal.classList.remove("active");
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") modal.classList.remove("active");
+    });
+
+    // Generic drag-to-scroll for any carousel track
+    function enableDragScroll(track) {
+      if (!track) return;
+      let isDown = false;
+      let startX = 0;
+      let startScrollLeft = 0;
+
+      track.addEventListener("mousedown", (e) => {
+        isDown = true;
+        track.classList.add("dragging");
+        startX = e.pageX;
+        startScrollLeft = track.scrollLeft;
+      });
+
+      window.addEventListener("mouseup", () => {
+        isDown = false;
+        track.classList.remove("dragging");
+      });
+
+      track.addEventListener("mouseleave", () => {
+        isDown = false;
+        track.classList.remove("dragging");
+      });
+
+      track.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const walk = e.pageX - startX;
+        track.scrollLeft = startScrollLeft - walk;
+      });
+    }
+
+    enableDragScroll(document.getElementById("carouselTrack"));
+    enableDragScroll(document.getElementById("carouselTrack2"));
+    enableDragScroll(document.getElementById("carouselTrack3"));
+    enableDragScroll(document.getElementById("inspirationTrack"));
+    enableDragScroll(document.getElementById("destinationsTrack"));
+
+    // Scroll-triggered fade-up for cards
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-up');
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.tour-card, .destination-card, .inspiration-card, .interest-card')
+      .forEach(el => {
+        el.style.opacity = '0';
+        cardObserver.observe(el);
+      });
+  </script>
+
+</body>
+
+</html>
