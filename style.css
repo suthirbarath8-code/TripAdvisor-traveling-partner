@@ -1746,3 +1746,156 @@ footer {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
+/* ===== Mobile-only Sign In ===== */
+.msi-section {
+  display: none; /* hidden on tablet & desktop */
+}
+
+@media (max-width: 600px) {
+  .msi-section {
+    display: block;
+    padding: 24px 16px;
+  }
+
+  .msi-wrap {
+    padding: 32px 16px 28px;
+    border-radius: 24px;
+    border: 1px solid #e0e0e0;
+    background: #f2f2f2; /* light grey */
+    text-align: center;
+  }
+
+  .msi-title {
+    display: inline-block;
+    margin: 0 0 12px;
+    padding-bottom: 6px;
+    font-size: 28px;
+    font-weight: 800;
+    color: #0a3b1e;
+    border-bottom: 3px solid #f0b92e;
+  }
+
+  .msi-sub {
+    margin: 0 0 22px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .msi-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 16px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    text-align: left;
+  }
+
+  .msi-input {
+    width: 100%;
+    padding: 15px 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #222;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .msi-input::placeholder {
+    color: #777;
+  }
+  .msi-input:focus {
+    border-color: #0a3b1e;
+    box-shadow: 0 0 0 3px rgba(10, 59, 30, 0.12);
+  }
+
+  .msi-forgot {
+    align-self: flex-end;
+    margin-top: -4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #0a3b1e;
+    text-decoration: none;
+  }
+  .msi-forgot:hover {
+    text-decoration: underline;
+  }
+
+  .msi-btn {
+    align-self: center;
+    width: 100%;
+    padding: 15px 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    background: #0a3b1e;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .msi-btn:hover {
+    background: #0d4f29;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  }
+  .msi-btn:active {
+    transform: translateY(0);
+  }
+
+  .msi-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #888;
+  }
+  .msi-divider::before,
+  .msi-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e5e5e5;
+  }
+
+  .msi-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 13px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .msi-google:hover {
+    background: #f7f7f7;
+  }
+
+  .msi-foot {
+    margin: 4px 0 0;
+    font-size: 13px;
+    text-align: center;
+    color: #555;
+  }
+  .msi-foot a {
+    font-weight: 700;
+    color: #0a3b1e;
+  }
+}
+/* ===== Hide search bar on mobile ===== */
+@media (max-width:420px) {
+  .search-block,        /* "Where to?" + tabs + big search bar */
+  .scrollup-search {    /* small search bar that appears in the header on scroll */
+    display: none !important;
+  }
+}
