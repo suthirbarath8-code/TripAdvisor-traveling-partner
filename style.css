@@ -1894,8 +1894,8 @@ footer {
 }
 /* ===== Hide search bar on mobile ===== */
 @media (max-width:420px) {
-  .search-block,        /* "Where to?" + tabs + big search bar */
-  .scrollup-search {    /* small search bar that appears in the header on scroll */
+  
+  .scrollup-search {    
     display: none !important;
   }
 }
